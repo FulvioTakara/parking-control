@@ -1,0 +1,93 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Roboto", sans-serif;
+    height: 100%;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: antiquewhite;
+    color: black;
+    width: 100%;
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 10px 10px;
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+button,
+input {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    border-bottom: 2px solid brown;
+    background-color: transparent;
+    outline: none;
+
+    color: black;
+    font-size: 1em;
+}
+
+button {
+    margin-top: 15px;
+    background-color: brown;
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+button:hover {
+    background: rgb(218, 50, 50);
+}
+
+div.input {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+input~label {
+    position: absolute;
+    top: 16px;
+    left: 0;
+    color: black;
+    transition: .4s;
+}
+
+input:focus~label,
+input:valid~label {
+    transform: translateY(-24px);
+    font-size: 0.8em;
+    letter-spacing: 0.1em;
+}
+
+table {
+    background-color: rgb(252, 230, 201);
+    margin-top: 40px;
+    border-bottom: solid 1px brown;
+    justify-content: space-between;
+}
+
+table th {
+    color: brown;
+    font-size: 20px;
+}
+
+table tbody {
+    font-size: 15px;
+    justify-content: space-between;
+}
